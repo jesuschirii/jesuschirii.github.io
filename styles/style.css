@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+:root {
+  --main-font: sans-serif;
+  --second-font: "Raleway";
+  --title-font: "Poppins";
+  --font-size: 16px;
+  --main-color: lightskyblue;
+  --second-color: #222;
+  --third-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--second-font), var(--main-font);
+  scroll-behavior: smooth;
+  color: var(--third-color);
+  overflow-x: hidden;
+}
+::selection {
+  background-color: #6400e4;
+  color: var(--third-color);
+}
+
+/* ****************** Header y Menú ****************** */
+
+header {
+  position: sticky;
+  background: var(--second-color);
+  border-top: 8px solid #6400e4;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  top: 0;
+  height: 7vh;
+}
+
+.header-title {
+  display: flex;
+  /*   justify-content: center; */
+  border: solid 2px var(--third-color);
+  padding: 0rem 0.5rem;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--third-color);
+
+  /* Le pone el espacio al final de la palabra */
+  /*  letter-spacing: 5pt; */
+}
+
+.menu {
+  display: flex;
+  /* Con esto alineamos el texto en el eje Y*/
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  padding: 0.5rem 2rem;
+}
+
+/* *****************************  Body y Secciones  *************************** */
+
+.section {
+  min-height: 100vh;
+  /*  padding: 2rem; */
+}
+
+.sec {
+  height: 80vh;
+  background-color: var(--second-color);
+  /*   border-radius: 15px; */
+  font-size: 40px;
+  padding: 4rem;
+  /*  box-shadow: 3px 3px 1px lightgrey; */
+  /*  border: solid 2px lightgrey; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  /* asdfasdf */
+}
+
+.principal,
+.canal-yt {
+  background-image: linear-gradient(120deg, #3a10e5, #6400e4);
+  /* background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(5, 5, 65, 1) 85%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+}
+
+.principal {
+  font-size: 6vh;
+  text-align: center;
+}
+
+.cosas {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.card {
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 2rem;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
